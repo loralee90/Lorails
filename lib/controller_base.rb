@@ -92,10 +92,6 @@ class ControllerBase
 
  attr_accessor :already_built_response
 
- def controller_name
-   self.class.to_s.underscore
- end
-
  def protect_from_forgery?
    @@protect_from_forgery
  end
