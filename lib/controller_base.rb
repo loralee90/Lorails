@@ -23,7 +23,7 @@ class ControllerBase
   def redirect_to(url)
     raise "double render error" if already_built_response?
 
-    @res.location = (url)
+    @res.location = url
     @res.status = 302
 
     @already_built_response = true
